@@ -16,7 +16,11 @@ CONFIG   -= app_bundle
 TEMPLATE = app
 
 
-SOURCES += main.cpp
+SOURCES += main.cpp \
+    extractannotation.cpp
 
 INCLUDEPATH += /usr/include/poppler/qt5
 LIBS        += -L/usr/lib -lpoppler-qt5
+
+HEADERS += \
+    extractannotation.h
