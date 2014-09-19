@@ -24,7 +24,7 @@ int main(int argc, char* argv[]) {
     QCommandLineOption verboseOption(QStringList() << "r" << "raw", "Output annotations as raw text");
 	parser.addOption(verboseOption);
 
-    parser.addPositionalArgument("filename", "PDF files to process");
+    parser.addPositionalArgument("filenames", "PDF files to process");
 
     parser.process(app);
 
